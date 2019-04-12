@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="servlet-api">
+    <CLASSES>
+      <root url="jar://D:/Tomcat/Tomcat9/lib/servlet-api.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../Mysql/mysql-connector-java-5.1.46.jar!/" />
+      <root url="jar://D:/Tomcat/Tomcat9/lib/jsp-api.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
+         version="4.0">
+    <servlet>
+        <servlet-name>Login</servlet-name>
+        <servlet-class>com.mq.servlet.Login</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Login</servlet-name>
+        <url-pattern>/Login</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>Register</servlet-name>
+        <servlet-class>com.mq.servlet.Register</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Register</servlet-name>
+        <url-pattern>/Register</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>post</servlet-name>
+        <servlet-class>com.mq.servlet.Post</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>post</servlet-name>
+        <url-pattern>/Post</url-pattern>
+    </servlet-mapping>
+
+    <filter>
+        <filter-name>userFilter</filter-name>
+        <filter-class>com.mq.filter.userFilter</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>userFilter</filter-name>
+        <url-pattern>/jsp/post.jsp</url-pattern>
+        <url-pattern>/jsp/reply.jsp</url-pattern>
+        <url-pattern>/jsp/userInfo.jsp</url-pattern>
+    </filter-mapping>
+</web-app>
